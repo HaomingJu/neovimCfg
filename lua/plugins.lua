@@ -20,8 +20,9 @@ packer.startup(
         use 'mg979/vim-visual-multi'
         use 'scrooloose/nerdcommenter'
         use 'itchyny/lightline.vim'
-        use 'github/copilot.vim'
+        use {'github/copilot.vim', run = ':Copilot setup'}
         use 'ethanholz/nvim-lastplace'
+        use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
     end
     )
 

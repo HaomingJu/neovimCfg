@@ -19,8 +19,8 @@ keymap("n", "<C-i>", ":LeaderfMru<CR>", opts)
 keymap("n", "<C-e>", ":LeaderfMru<CR>", opts)
 keymap("n", "<Leader>h", ":LeaderfHistoryCmd<CR>", opts)
 
-keymap("n", "tt", ":NERDTreeToggle<CR>", opts)
-keymap("n", "ff", ":TagbarToggle<CR>", opts)
+keymap("n", "ff", ":NERDTreeToggle<CR>", opts)
+keymap("n", "tt", ":TagbarToggle<CR>", opts)
 
 keymap("n", "<Esc><Esc>", ":quitall<CR>", opts)
 keymap("n", "m", "gd", opts)
@@ -39,6 +39,7 @@ keymap("n", "<Leader>c", "<Nop>", opts)
 keymap("n", "<Leader><Space>", ":Leaderf command<CR>", opts)
 keymap("n", "ci", "<Plug>NERDCommenterInvert", opts)
 keymap("v", "ci", "<Plug>NERDCommenterInvert", opts)
+keymap("n", "<F7>", ":Neoformat<CR>", opts)
 
 
 -- 双击键位

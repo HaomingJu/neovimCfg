@@ -9,6 +9,6 @@ vim.cmd([[
     let g:Lf_PreviewInPopup = 1
     let g:Lf_WildIgnore = {
             \'dir': ['.git', 'build', '*output*', 'devel'],
-            \ 'file': ['*.o', '*.so', '*.py[co]', 'compile_commands.json']
+            \ 'file': ['*.o', '*.so', '*.py[co]', 'compile_commands.json', '.cache*']
             \}
 ]])

@@ -18,5 +18,7 @@
       "--completion-style=detailed",
       "--pch-storage=memory"
   ],
+  "sumneko-lua.enableNvimLuaDev": true,
+  "sumneko-lua.checkUpdate": true,
   "Lua.telemetry.enable": true
 }

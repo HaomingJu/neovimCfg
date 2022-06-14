@@ -3,7 +3,7 @@ vim.cmd([[
 let g:coc_config_home = '~/.config/nvim/lua/plugin-config'
 
 "Coc 插件
-call coc#add_extension('coc-json', 'coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-sumneko-lua', 'coc-ultisnips', 'coc-clangd')
+call coc#add_extension('coc-json', 'coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-ultisnips', 'coc-clangd', 'coc-sumneko-lua')
 
 " Coc补全, Tab触发
 function! s:check_back_space() abort
