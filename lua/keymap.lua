@@ -41,6 +41,8 @@ keymap("n", "ci", "<Plug>NERDCommenterInvert", opts)
 keymap("v", "ci", "<Plug>NERDCommenterInvert", opts)
 keymap("n", "<F7>", ":Neoformat<CR>", opts)
 
+keymap("n", "<Leader>t", "<Plug>(coc-translator-p)", opts)
+keymap("v", "<Leader>t", "<Plug>(coc-translator-pv)", opts)
 
 -- 双击键位
 vim.cmd([[

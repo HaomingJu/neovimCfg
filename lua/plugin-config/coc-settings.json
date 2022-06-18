@@ -18,7 +18,8 @@
       "--completion-style=detailed",
       "--pch-storage=memory"
   ],
-  "sumneko-lua.enableNvimLuaDev": true,
+  "sumneko-lua.enableNvimLuaDev": false,
   "sumneko-lua.checkUpdate": true,
-  "Lua.telemetry.enable": true
+  "Lua.telemetry.enable": true,
+  "translator.engines": ["youdao"]
 }

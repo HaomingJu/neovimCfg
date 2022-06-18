@@ -21,8 +21,15 @@ packer.startup(
         use 'scrooloose/nerdcommenter'
         use 'itchyny/lightline.vim'
         use {'github/copilot.vim', run = ':Copilot setup'}
-        use 'ethanholz/nvim-lastplace'
+        use {
+            'ethanholz/nvim-lastplace',
+            config = function ()
+                require('nvim-lastplace').setup()
+            end
+        }
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
+        use 'tveskag/nvim-blame-line'
+        use 'rcarriga/nvim-notify'
     end
     )
 
@@ -36,4 +43,3 @@ require('plugin-config/vim-ctrlspace')
 require('plugin-config/LeaderF')
 require('plugin-config/filetype')
 require('plugin-config/easymotion')
-require('nvim-lastplace').setup()
