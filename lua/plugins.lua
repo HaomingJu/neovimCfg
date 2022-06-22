@@ -5,12 +5,12 @@ packer.init({package_root = "~/.config/nvim/pack/"})
 packer.startup(
     function()
         use 'wbthomason/packer.nvim'
+        use 'preservim/nerdtree'
         use 'ellisonleao/gruvbox.nvim'
         use 'vim-ctrlspace/vim-ctrlspace'
         use {'neoclide/coc.nvim', branch = 'release'}
         use 'easymotion/vim-easymotion'
         use 'dyng/ctrlsf.vim'
-        use 'preservim/nerdtree'
         use 'rking/ag.vim'
         use 'majutsushi/tagbar'
         use 'nvim-treesitter/nvim-treesitter'
@@ -20,7 +20,6 @@ packer.startup(
         use 'mg979/vim-visual-multi'
         use 'scrooloose/nerdcommenter'
         use 'itchyny/lightline.vim'
-        use {'github/copilot.vim', run = ':Copilot setup'}
         use {
             'ethanholz/nvim-lastplace',
             config = function ()
@@ -30,6 +29,8 @@ packer.startup(
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
         use 'rcarriga/nvim-notify'
+        use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
+        use {'HaomingJu/nvim-gitlab-about', rocks = {'luajit-curl', 'lua-cjson'}}
     end
     )
 
