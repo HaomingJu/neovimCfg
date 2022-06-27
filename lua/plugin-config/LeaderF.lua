@@ -24,4 +24,8 @@ vim.cmd([[
             \ 'Rg': 0,
             \ 'Gtags': 0
             \}
+
+    let g:Lf_GitlabToken = "93gX9YSwsY_MayELS3jp"
+    let g:Lf_GitlabURL = "http://192.168.3.148/api/v4"
+    let g:Lf_PreviewResult.mr = 1
 ]])

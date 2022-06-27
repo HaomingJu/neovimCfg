@@ -43,6 +43,7 @@ keymap("n", "<F7>", ":Neoformat<CR>", opts)
 
 keymap("n", "<Leader>t", "<Plug>(coc-translator-p)", opts)
 keymap("v", "<Leader>t", "<Plug>(coc-translator-pv)", opts)
+keymap('n', "<F5>", ":LeaderfMR<CR>", opts)
 
 -- 双击键位
 vim.cmd([[

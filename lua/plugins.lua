@@ -1,5 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
+
 local packer = require('packer')
 packer.init({package_root = "~/.config/nvim/pack/"})
 packer.startup(
@@ -28,9 +29,8 @@ packer.startup(
         }
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
-        use 'rcarriga/nvim-notify'
-        use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
-        use {'HaomingJu/nvim-gitlab-about', rocks = {'luajit-curl', 'lua-cjson'}}
+        use 'HaomingJu/LeaderF-gitlab'
+        use 'github/copilot.vim'
     end
     )
 
