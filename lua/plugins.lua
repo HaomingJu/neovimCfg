@@ -6,9 +6,7 @@ packer.init({package_root = "~/.config/nvim/pack/"})
 packer.startup(
     function()
         use 'wbthomason/packer.nvim'
-        use 'preservim/nerdtree'
         use 'ellisonleao/gruvbox.nvim'
-        use 'vim-ctrlspace/vim-ctrlspace'
         use {'neoclide/coc.nvim', branch = 'release'}
         use 'easymotion/vim-easymotion'
         use 'dyng/ctrlsf.vim'
@@ -20,6 +18,7 @@ packer.startup(
         use 'nathom/filetype.nvim'
         use 'mg979/vim-visual-multi'
         use 'scrooloose/nerdcommenter'
+        use 'preservim/nerdtree'
         use 'itchyny/lightline.vim'
         use {
             'ethanholz/nvim-lastplace',
@@ -29,8 +28,11 @@ packer.startup(
         }
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
-        use 'HaomingJu/LeaderF-gitlab'
+        --use 'HaomingJu/LeaderF-gitlab'
         use 'github/copilot.vim'
+        use 'mzlogin/vim-markdown-toc'
+        use 'ryanoasis/vim-devicons'
+        use 'Yggdroot/indentLine'
     end
     )
 
@@ -39,8 +41,6 @@ require('plugin-config/gruvbox')
 require('plugin-config/nvim-treesitter')
 require('plugin-config/vimwiki')
 require('plugin-config/coc')
-require('plugin-config/nerdtree')
-require('plugin-config/vim-ctrlspace')
 require('plugin-config/LeaderF')
 require('plugin-config/filetype')
 require('plugin-config/easymotion')

@@ -1,4 +1,6 @@
 {
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "notification.winblend": 30,
   "suggest.snippetIndicator": "*",
   "snippets.priority": 100,
   "snippets.snipmate.enable": false,
@@ -16,7 +18,8 @@
   "clangd.path": "/home/haoming/.config/coc/extensions/coc-clangd-data/install/clangd_13.0.0/bin/clangd",
   "clangd.arguments": [
       "--completion-style=detailed",
-      "--pch-storage=memory"
+      "--pch-storage=memory",
+      "--clang-tidy"
   ],
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.checkUpdate": true,

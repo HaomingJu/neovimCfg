@@ -15,10 +15,12 @@ keymap("n", "<C-j>", ":wincmd j<CR>", opts)
 
 keymap("n", "<C-p>", ":LeaderfFile<CR>", opts)
 keymap("n", "<C-f>", ":Leaderf bufTag --nowrap<CR>", opts)
-keymap("n", "<C-i>", ":LeaderfMru<CR>", opts)
-keymap("n", "<C-e>", ":LeaderfMru<CR>", opts)
+keymap("n", "<C-i>", ":Leaderf mru --nowrap<CR>", opts)
+keymap("n", "<C-e>", ":Leaderf mru --nowrap<CR>", opts)
 keymap("n", "<Leader>h", ":LeaderfHistoryCmd<CR>", opts)
+keymap("n", "<C-Space>", ":Leaderf! buffer --nowrap<CR>", opts)
 
+--keymap("n", "ff", ":CocCommand explorer --width 35 --toggle --sources=file+<CR>", opts)
 keymap("n", "ff", ":NERDTreeToggle<CR>", opts)
 keymap("n", "tt", ":TagbarToggle<CR>", opts)
 
@@ -44,6 +46,7 @@ keymap("n", "<F7>", ":Neoformat<CR>", opts)
 keymap("n", "<Leader>t", "<Plug>(coc-translator-p)", opts)
 keymap("v", "<Leader>t", "<Plug>(coc-translator-pv)", opts)
 keymap('n', "<F5>", ":LeaderfMR<CR>", opts)
+keymap('v', "<F5>", ":LeaderfMR<CR>", opts)
 
 -- 双击键位
 vim.cmd([[

@@ -1,1 +1,22 @@
 vim.g.did_load_filetypes = 1
+
+vim.cmd([[
+
+function! AsynTime()
+    return strftime("%Y-%m-%d %H:%M %a")
+endfunction
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ ['mode'], ['cocstatus'], ['absolutepath'] ],
+      \   'right': [ ['time'], ['fileformat'], ['fileencoding'], ['filetype'] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'time': 'AsynTime'
+      \ }
+      \ }
+
+au BufNewFile,BufRead *.arxml setf xml
+]])
