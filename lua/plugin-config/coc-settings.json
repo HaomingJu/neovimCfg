@@ -2,6 +2,7 @@
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "notification.winblend": 30,
   "suggest.snippetIndicator": "*",
+  "suggest.noselect": false,
   "snippets.priority": 100,
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
@@ -9,9 +10,7 @@
       "~/.vim/Snippets"
   ],
   "snippets.userSnippetsDirectory": "~/.vim/Snippets",
-  "suggest.enablePreview": true,
-  "suggest.noselect": false,
-
+  "notification.border": false,
   "python.pythonPath": "/usr/bin/python2.7",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": false,
