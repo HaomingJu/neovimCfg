@@ -19,4 +19,6 @@ let g:lightline = {
       \ }
 
 au BufNewFile,BufRead *.arxml setf xml
+au BufNewFile,BufRead *.cmake setf cmake
+au BufNewFile,BufRead *.cmake.in setf cmake
 ]])
