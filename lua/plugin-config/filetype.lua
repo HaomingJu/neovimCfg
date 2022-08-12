@@ -9,7 +9,7 @@ endfunction
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
-      \   'left': [ ['mode'], ['cocstatus'], ['absolutepath'] ],
+      \   'left': [ ['mode'], ['cocstatus'], ['relativepath'] ],
       \   'right': [ ['time'], ['fileformat'], ['fileencoding'], ['filetype'] ]
       \ },
       \ 'component_function': {

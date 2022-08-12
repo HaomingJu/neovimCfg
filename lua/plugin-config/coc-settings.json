@@ -21,14 +21,14 @@
     "text": "Text",
     "color": "Color",
     "file": "File",
-    "reference": "Reference",
+    "reference": "Ref",
     "folder": "Floder",
     "enumMember": "Enum",
     "constant": "Const",
     "struct": "Struct",
     "event": "Event",
     "operator": "Operator",
-    "typeParameter": "TypeParameter",
+    "typeParameter": "TypeParam",
     "default": "Default"
   },
   "suggest.formatItems": [
@@ -36,6 +36,10 @@
       "menu",
       "kind"
   ],
+  "diagnostic.errorSign": "E>",
+  "diagnostic.warningSign": "W>",
+  "diagnostic.infoSign": "I>",
+
   "suggest.removeDuplicateItems": true,
   "snippets.priority": 100,
   "snippets.snipmate.enable": false,

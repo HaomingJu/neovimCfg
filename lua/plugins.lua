@@ -31,7 +31,6 @@ packer.startup(
         --use 'HaomingJu/LeaderF-gitlab'
         use 'github/copilot.vim'
         use 'mzlogin/vim-markdown-toc'
-        use 'ryanoasis/vim-devicons'
         use 'Yggdroot/indentLine'
     end
     )

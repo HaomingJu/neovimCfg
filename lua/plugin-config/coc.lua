@@ -1,7 +1,7 @@
 vim.cmd([[
 
     let g:coc_config_home = '~/.config/nvim/lua/plugin-config'
-    let g:coc_global_extensions = ['coc-json', 'coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-ultisnips', 'coc-clangd', 'coc-sumneko-lua', 'coc-clang-format-style-options']
+    let g:coc_global_extensions = ['coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-ultisnips', 'coc-clangd', 'coc-sumneko-lua', 'coc-clang-format-style-options']
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -33,7 +33,8 @@ let g:coc_snippet_next = '<tab>'
 
 " https://www.ditig.com/256-colors-cheat-sheet
 hi CocSearch    ctermfg=None    guibg=None
-hi CocMenuSel   ctermbg=34      guibg=#00af00
+hi CocMenuSel   ctermbg=34      guibg=#808080
+
 
 set updatetime=300
 set shortmess+=c
