@@ -45,22 +45,23 @@
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
-      "~/.vim/Snippets"
+     "~/.config/Snippets"
+
   ],
-  "snippets.userSnippetsDirectory": "~/.vim/Snippets",
+  "snippets.userSnippetsDirectory": "~/.config/Snippets",
   "notification.border": false,
   "python.pythonPath": "/usr/bin/python2.7",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": false,
-  "clangd.path": "/home/haoming/.config/coc/extensions/coc-clangd-data/install/clangd_13.0.0/bin/clangd",
+  "clangd.path": "/home/haoming/.config/coc/extensions/coc-clangd-data/install/clangd_14.0.3/bin/clangd",
   "clangd.arguments": [
       "--completion-style=detailed",
       "--pch-storage=memory",
       "--clang-tidy"
   ],
+  "clangd.inlayHints.enable": false,
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.checkUpdate": true,
   "sumneko-lua.prompt": true,
-  "Lua.telemetry.enable": true,
-  "translator.engines": ["youdao"]
+  "Lua.telemetry.enable": true
 }
