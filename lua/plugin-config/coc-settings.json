@@ -32,6 +32,7 @@
     "default": "Default"
   },
   "suggest.formatItems": [
+      "shortcut",
       "abbr",
       "menu",
       "kind"
@@ -53,7 +54,7 @@
   "python.pythonPath": "/usr/bin/python2.7",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": false,
-  "clangd.path": "/home/haoming/.config/coc/extensions/coc-clangd-data/install/clangd_14.0.3/bin/clangd",
+  "clangd.path": "/usr/bin/clangd",
   "clangd.arguments": [
       "--completion-style=detailed",
       "--pch-storage=memory",
