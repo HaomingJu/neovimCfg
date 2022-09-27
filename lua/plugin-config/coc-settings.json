@@ -32,10 +32,10 @@
     "default": "Default"
   },
   "suggest.formatItems": [
-      "shortcut",
       "abbr",
       "menu",
-      "kind"
+      "kind",
+      "shortcut"
   ],
   "diagnostic.errorSign": "E>",
   "diagnostic.warningSign": "W>",

@@ -33,7 +33,7 @@ let g:coc_snippet_next = '<tab>'
 
 " https://www.ditig.com/256-colors-cheat-sheet
 hi CocSearch    ctermfg=None    guibg=None
-hi CocMenuSel   ctermbg=34      guibg=#808080
+hi CocMenuSel   guibg=#00ff00   guifg=#080808   gui=bold
 
 
 set updatetime=300
