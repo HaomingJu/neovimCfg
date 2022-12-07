@@ -64,5 +64,11 @@
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.checkUpdate": true,
   "sumneko-lua.prompt": true,
-  "Lua.telemetry.enable": true
+  "Lua.telemetry.enable": true,
+  "languageserver": {
+      "digestif": {
+          "command": "digestif",
+          "filetypes": ["tex", "plaintex", "context"]
+      }
+  }
 }
