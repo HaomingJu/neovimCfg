@@ -12,7 +12,7 @@ packer.startup(
         use 'dyng/ctrlsf.vim'
         use 'rking/ag.vim'
         use 'majutsushi/tagbar'
-        use 'nvim-treesitter/nvim-treesitter'
+        use {'nvim-treesitter/nvim-treesitter', run = 'TSUpdate'}
         use 'vimwiki/vimwiki'
         use {'Yggdroot/LeaderF', run = ':LeaderfInstallCExtension'}
         use 'nathom/filetype.nvim'

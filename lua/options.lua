@@ -17,7 +17,7 @@ local options = {
     fileencodings = "utf-8";
     clipboard = "unnamedplus"; -- allows neovim to access the system clipboard
     laststatus=3; -- 全局状态栏(NeoVim0.7)
-    mouse = "a",               -- allow the mouse to be used in neovim
+    mouse = "v",               -- allow the mouse to be used in neovim
 }
 
 vim.opt.shortmess:append "c"
