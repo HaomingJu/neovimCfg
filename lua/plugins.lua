@@ -28,8 +28,6 @@ packer.startup(
         }
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
-        --use 'HaomingJu/LeaderF-gitlab'
-        use 'github/copilot.vim'
         use 'mzlogin/vim-markdown-toc'
         use 'Yggdroot/indentLine'
     end
