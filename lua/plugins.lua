@@ -28,11 +28,10 @@ packer.startup(
         }
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
-        use 'mzlogin/vim-markdown-toc'
         use 'Yggdroot/indentLine'
+        use 'gennaro-tedesco/nvim-peekup'
     end
     )
-
 
 require('plugin-config/gruvbox')
 require('plugin-config/nvim-treesitter')
