@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup({
-    ensure_installed = { "c", "lua", "cpp", "python", "bash", "cmake", "dockerfile", "html", "javascript", "json", "json5", "jsonc", "sql", "typescript", "vim", "vue"},
+    ensure_installed = { "c", "lua", "cpp", "python", "bash", "cmake", "dockerfile", "html", "javascript", "json", "json5", "jsonc", "typescript", "vim", "vue"},
 
     sync_install = false,
 
