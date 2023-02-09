@@ -1,5 +1,3 @@
-vim.g.did_load_filetypes = 1
-
 vim.cmd([[
 
 function! AsynTime()
@@ -17,8 +15,26 @@ let g:lightline = {
       \   'time': 'AsynTime'
       \ }
       \ }
-
-au BufNewFile,BufRead *.arxml setf xml
-au BufNewFile,BufRead *.cmake setf cmake
-au BufNewFile,BufRead *.cmake.in setf cmake
 ]])
+
+
+-- In init.lua or filetype.nvim's config file
+require("filetype").setup({
+    overrides = {
+        extensions = {
+            -- 简单后缀
+            bash = 'bash',
+            sh = 'bash',
+            zsh = 'zsh',
+            arxml = 'xml',
+            ini = 'confini',
+            h = "cpp",
+            launch = "xml"
+        },
+        complex = {
+            -- 正则匹配
+            [".*git/config"] = "gitconfig",
+            [".*cmake.in$"] = "cmake"
+        }
+    }
+})
