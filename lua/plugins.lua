@@ -20,12 +20,7 @@ packer.startup(
         use 'scrooloose/nerdcommenter'
         use 'preservim/nerdtree'
         use 'itchyny/lightline.vim'
-        use {
-            'ethanholz/nvim-lastplace',
-            config = function ()
-                require('nvim-lastplace').setup()
-            end
-        }
+        use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
         use {'sbdchd/neoformat', run = 'python3 -m pip install cmakelang'}
         use 'tveskag/nvim-blame-line'
         use 'Yggdroot/indentLine'
