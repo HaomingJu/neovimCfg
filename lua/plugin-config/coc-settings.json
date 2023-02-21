@@ -40,6 +40,7 @@
   "diagnostic.errorSign": "E>",
   "diagnostic.warningSign": "W>",
   "diagnostic.infoSign": "I>",
+  
 
   "suggest.removeDuplicateItems": true,
   "snippets.priority": 100,
@@ -60,7 +61,7 @@
       "--pch-storage=memory",
       "--clang-tidy"
   ],
-  "clangd.inlayHints.enable": false,
+  "inlayHint.enable": false,
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.checkUpdate": true,
   "sumneko-lua.prompt": true,
