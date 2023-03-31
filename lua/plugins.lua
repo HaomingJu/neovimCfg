@@ -25,6 +25,7 @@ packer.startup(
         use 'tveskag/nvim-blame-line'
         use 'Yggdroot/indentLine'
         use 'gennaro-tedesco/nvim-peekup'
+        use 'github/copilot.vim'
     end
     )
 
