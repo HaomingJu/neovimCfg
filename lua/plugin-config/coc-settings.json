@@ -59,7 +59,8 @@
   "clangd.arguments": [
       "--completion-style=detailed",
       "--pch-storage=memory",
-      "--clang-tidy"
+      "--clang-tidy",
+      "--enable-config"
   ],
   "inlayHint.enable": false,
   "sumneko-lua.enableNvimLuaDev": true,

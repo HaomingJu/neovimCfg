@@ -48,6 +48,10 @@ keymap("v", "<Leader>t", "<Plug>(coc-translator-pv)", opts)
 keymap('n', "<F5>", ":LeaderfMR<CR>", opts)
 keymap('v', "<F5>", ":LeaderfMR<CR>", opts)
 
+keymap("n", "<F8>", "<Plug>(coc-fix-current)", opts)
+
+
+
 -- 双击键位
 vim.cmd([[
     set timeoutlen=300
