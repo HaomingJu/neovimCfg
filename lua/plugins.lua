@@ -13,7 +13,7 @@ packer.startup(
         use 'rking/ag.vim'
         use 'majutsushi/tagbar'
         use {'nvim-treesitter/nvim-treesitter', run = 'TSUpdate'}
-        use 'vimwiki/vimwiki'
+        use 'lervag/wiki.vim'
         use {'Yggdroot/LeaderF', run = ':LeaderfInstallCExtension'}
         use 'nathom/filetype.nvim'
         use 'mg979/vim-visual-multi'
@@ -25,7 +25,7 @@ packer.startup(
         use 'tveskag/nvim-blame-line'
         use 'Yggdroot/indentLine'
         use 'gennaro-tedesco/nvim-peekup'
-        use 'github/copilot.vim'
+        --use 'github/copilot.vim'
     end
     )
 

@@ -1,7 +1,7 @@
 vim.cmd([[
 
     let g:coc_config_home = '~/.config/nvim/lua/plugin-config'
-    let g:coc_global_extensions = ['coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-ultisnips', 'coc-clangd', 'coc-sumneko-lua', 'coc-clang-format-style-options']
+    let g:coc_global_extensions = ['coc-cmake', 'coc-snippets', 'coc-pairs', 'coc-pyright', 'coc-vimlsp', 'coc-docker', 'coc-ultisnips', 'coc-clangd', 'coc-sumneko-lua', 'coc-clang-format-style-options', 'coc-xml']
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

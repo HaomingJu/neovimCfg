@@ -27,9 +27,12 @@ require("filetype").setup({
             sh = 'bash',
             zsh = 'zsh',
             arxml = 'xml',
+            xml = 'xml',
             ini = 'confini',
             h = "cpp",
-            launch = "xml"
+            launch = "xml",
+            urdf = "xml",
+            c = "c"
         },
         complex = {
             -- 正则匹配
