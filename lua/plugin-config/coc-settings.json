@@ -72,5 +72,5 @@
           "command": "digestif",
           "filetypes": ["tex", "plaintex", "context"]
       }
-  }
+  },
 }

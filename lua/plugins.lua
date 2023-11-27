@@ -27,6 +27,7 @@ packer.startup(
         use 'gennaro-tedesco/nvim-peekup'
         use {'skywind3000/asynctasks.vim', requires = {'skywind3000/asynctasks.vim', 'skywind3000/asyncrun.vim'}}
         --use 'github/copilot.vim'
+        use 'Exafunction/codeium.vim'
     end
     )
 
