@@ -62,6 +62,9 @@
       "--clang-tidy",
       "--enable-config"
   ],
+  "clangd.fallbackFlags": [
+      "-std=c++17"
+  ],
   "inlayHint.enable": false,
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.checkUpdate": true,
