@@ -2,7 +2,14 @@ vim.cmd [[packadd packer.nvim]]
 
 
 local packer = require('packer')
-packer.init({package_root = "~/.config/nvim/pack/"})
+packer.init({
+	package_root = "~/.config/nvim/pack/",
+	git = {
+	    depth = 1
+	},
+	clone_timeout = 120
+
+})
 packer.startup(
     function()
         use 'wbthomason/packer.nvim'
