@@ -1,4 +1,5 @@
-{ 
+{
+  "npm.binPath": "/usr/local/bin/cnpm",
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "notification.winblend": 30,
   "suggest.snippetIndicator": "*",
@@ -32,23 +33,20 @@
     "default": "Default"
   },
   "suggest.formatItems": [
-      "abbr",
-      "menu",
-      "kind",
-      "shortcut"
+    "abbr",
+    "menu",
+    "kind",
+    "shortcut"
   ],
   "diagnostic.errorSign": "E>",
   "diagnostic.warningSign": "W>",
   "diagnostic.infoSign": "I>",
-  
-
   "suggest.removeDuplicateItems": true,
   "snippets.priority": 100,
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
-     "~/.config/Snippets"
-
+    "~/.config/Snippets"
   ],
   "snippets.userSnippetsDirectory": "~/.config/Snippets",
   "notification.border": false,
@@ -56,14 +54,15 @@
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": false,
   "clangd.arguments": [
-      "--completion-style=detailed",
-      "--pch-storage=memory",
-      "--clang-tidy",
-      "--enable-config",
-      "--query-driver=/opt/clangd_*/lib/clang/*/include"
+    "--completion-style=detailed",
+    "--pch-storage=memory",
+    "--clang-tidy",
+    "--enable-config",
+    "--query-driver=/opt/clangd_*/lib/clang/*/include",
+    "--compile-commands-dir=build-x86"
   ],
   "clangd.fallbackFlags": [
-      "-std=c++17"
+    "-std=c++17"
   ],
   "inlayHint.enable": false,
   "sumneko-lua.enableNvimLuaDev": true,
@@ -71,9 +70,13 @@
   "sumneko-lua.prompt": true,
   "Lua.telemetry.enable": true,
   "languageserver": {
-      "digestif": {
-          "command": "digestif",
-          "filetypes": ["tex", "plaintex", "context"]
-      }
-  },
+    "digestif": {
+      "command": "digestif",
+      "filetypes": [
+        "tex",
+        "plaintex",
+        "context"
+      ]
+    }
+  }
 }
