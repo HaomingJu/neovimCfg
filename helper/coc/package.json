@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "coc-pairs": ">=1.4.2",
+    "coc-cmake": ">=0.2.2",
+    "coc-snippets": ">=3.1.10",
+    "coc-vimlsp": ">=0.13.1",
+    "coc-ultisnips": ">=1.2.4",
+    "coc-clangd": ">=0.30.2",
+    "coc-sumneko-lua": ">=0.0.42",
+    "coc-clang-format-style-options": ">=0.0.5",
+    "coc-xml": ">=1.14.1",
+    "coc-docker": ">=1.0.2",
+    "coc-pyright": ">=1.1.355",
+    "coc-json": ">=1.9.2"
+  },
+  "disabled": [],
+  "locked": []
+}
