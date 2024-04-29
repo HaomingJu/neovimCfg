@@ -69,7 +69,20 @@ end
 function Cfg.treesitter()
 	require("nvim-treesitter.configs").setup({
 		-- A list of parser names, or "all" (the five listed parsers should always be installed)
-		ensure_installed = { "c", "cpp", "cmake", "lua", "vim", "vimdoc", "query" },
+		ensure_installed = {
+			"c",
+			"cpp",
+			"cmake",
+			"lua",
+			"vim",
+			"vimdoc",
+			"query",
+			"bash",
+			"comment",
+			"cuda",
+			"dockerfile",
+			"json",
+		},
 		sync_install = true,
 		auto_install = true,
 		highlight = {
@@ -99,6 +112,7 @@ function Cfg.filetype()
 				-- 正则匹配
 				[".*git/config"] = "gitconfig",
 				[".*cmake.in$"] = "cmake",
+				["Dockerfile*"] = "dockerfile",
 			},
 		},
 	})
