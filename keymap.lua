@@ -19,6 +19,7 @@ function Keys.leaderf()
 	map("n", "<C-i>", "<CMD>Leaderf mru<CR>")
 	map("n", "<C-e>", "<CMD>Leaderf mru<CR>")
 	map("n", "<C-f>", "<CMD>Leaderf function<CR>")
+	map("n", "<F2>", "<CMD>Leaderf filetype<CR>")
 end
 
 function Keys.nerdcommenter()
