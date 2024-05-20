@@ -5,7 +5,6 @@ vim.g.coc_global_extensions = {
 	"coc-cmake",
 	"coc-snippets",
 	"coc-pairs",
-	"coc-pyright",
 	"coc-vimlsp",
 	"coc-docker",
 	"coc-ultisnips",

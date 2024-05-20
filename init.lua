@@ -66,9 +66,9 @@ packer.startup(function()
 	})
 
 	use({
-		"lervag/wiki.vim",
+		"vimwiki/vimwiki",
 		config = function()
-			require("config").wiki()
+                        require("config").wiki()
 		end,
 	})
 
@@ -103,7 +103,7 @@ packer.startup(function()
 	--use("Exafunction/codeium.vim")
 	use("easymotion/vim-easymotion")
         use("mg979/vim-visual-multi")
-	--use("itchyny/lightline.vim")
+        use("itchyny/lightline.vim")
 
 	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
 	--use("rking/ag.vim")

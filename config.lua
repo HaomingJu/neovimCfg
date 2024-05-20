@@ -119,9 +119,8 @@ function Cfg.filetype()
 end
 
 function Cfg.wiki()
-	local home_path = os.getenv("HOME")
-	vim.g.wiki_root = home_path .. "/.config/vimwiki"
-	vim.g.python3_host_prog = "/usr/bin/python3"
+        vim.g.vimwiki_list = {{path = '~/.config/vimwiki', syntax = 'markdown', ext = '.md'}}
+        vim.g.vimwiki_global_ext = 0
 end
 
 return Cfg
