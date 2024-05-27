@@ -28,7 +28,7 @@ function Keys.nerdcommenter()
 end
 
 function Keys.ctrlsf()
-	map("n", "<Leader>f", "<CMD>CtrlSF <C-R><C-W><CR>")
+	map("n", "<Leader>f", "<Plug>CtrlSFCCwordPath<CR>")
 end
 
 function Keys.tagbar()
