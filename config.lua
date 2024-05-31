@@ -17,7 +17,7 @@ function Cfg.basic()
 	keymap("n", "<C-s>", ":wa<CR>", opts)
 
 	vim.opt.shortmess:append("c")
-	vim.opt.number = false
+	vim.opt.number = true
 	vim.opt.cursorline = true
 	vim.opt.shiftwidth = 4
 	vim.opt.expandtab = true
