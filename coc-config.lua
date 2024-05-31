@@ -12,6 +12,7 @@ vim.g.coc_global_extensions = {
 	"coc-sumneko-lua",
 	"coc-clang-format-style-options",
 	"coc-xml",
+        "coc-jedi"
 }
 -- Let tab can jump outside of ">" or ")" on insert mode
 vim.g.coc_snippet_next = '<tab>'

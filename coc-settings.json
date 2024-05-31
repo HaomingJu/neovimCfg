@@ -78,5 +78,7 @@
         "context"
       ]
     }
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false,
+  "jedi.executable.command": "jedi-language-server"
 }
