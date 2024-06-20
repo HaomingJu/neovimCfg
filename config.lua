@@ -37,6 +37,7 @@ function Cfg.basic()
 	vim.opt.laststatus = 3 -- 全局状态栏(NeoVim0.7)
 	vim.opt.mouse = "v" -- allow the mouse to be used in neovim
 	vim.opt.swapfile = false
+        vim.opt.mouse = "a"
 end
 
 function Cfg.colortheme()
