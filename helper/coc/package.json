@@ -11,7 +11,8 @@
     "coc-xml": ">=1.14.1",
     "coc-docker": ">=1.0.2",
     "coc-pyright": ">=1.1.355",
-    "coc-json": ">=1.9.2"
+    "coc-json": ">=1.9.2",
+    "coc-jedi": ">=0.36.1"
   },
   "disabled": [],
   "locked": []
