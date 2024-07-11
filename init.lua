@@ -100,10 +100,17 @@ packer.startup(function()
 		end,
 	})
 
-	--use("Exafunction/codeium.vim")
+        --use 'Exafunction/codeium.vim'
+        use 'github/copilot.vim'
 	use("easymotion/vim-easymotion")
         use("mg979/vim-visual-multi")
-        use("itchyny/lightline.vim")
+
+        use({
+                "nvim-lualine/lualine.nvim",
+                config = function()
+                    require("config").lualine()
+                end,
+        })
 
 	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
 	--use("rking/ag.vim")
