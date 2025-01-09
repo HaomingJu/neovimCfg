@@ -113,6 +113,7 @@ function Cfg.filetype()
 				[".*git/config"] = "gitconfig",
 				[".*cmake.in$"] = "cmake",
 				["Dockerfile*"] = "dockerfile",
+                                ['Jenkinsfile*'] = "groovy",
 			},
 		},
 	})
