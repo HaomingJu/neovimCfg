@@ -64,6 +64,19 @@ function Cfg.leaderf()
 	vim.g.Lf_WindowPosition = "popup"
 	vim.g.Lf_PopupColorscheme = "default"
 	vim.g.Lf_ShowDevIcons = 0
+        vim.g.Lf_PopupPalette = {
+            dark = {
+                Lf_hl_cursorline = {
+                    gui = 'NONE',
+                    font = 'NONE',
+                    guifg = 'NONE',
+                    guibg = '#191970',
+                    cterm = 'NONE',
+                    ctermfg = 'NONE',
+                    ctermbg = '100'
+                }
+            }
+        }
 end
 
 function Cfg.treesitter()
