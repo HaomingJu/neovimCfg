@@ -41,7 +41,9 @@ end
 
 function Cfg.colortheme()
 	vim.o.background = "dark"
-	vim.cmd([[colorscheme gruvbox]])
+	--vim.cmd([[colorscheme gruvbox]])
+        vim.cmd([[colorscheme tokyonight-moon]])
+
 end
 
 function Cfg.nerdtree()

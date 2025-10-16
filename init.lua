@@ -5,6 +5,7 @@ package.path = package.path .. ";" .. home_path .. "/.config/nvim/?.lua"
 
 -- 一般性快捷键
 require("config").basic()
+require("config").colortheme()
 
 local packer = require("packer")
 packer.init({
@@ -17,12 +18,7 @@ packer.init({
 
 packer.startup(function()
 	use("wbthomason/packer.nvim")
-	use({
-		"ellisonleao/gruvbox.nvim",
-		config = function()
-			require("config").colortheme()
-		end,
-	})
+        use("folke/tokyonight.nvim","ellisonleao/gruvbox.nvim")
 	use({
 		"preservim/nerdtree",
 		config = function()
