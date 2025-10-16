@@ -109,6 +109,14 @@ packer.startup(function()
             end,
         })
 
+        use({
+            "folke/todo-comments.nvim",
+            requires = "nvim-lua/plenary.nvim",
+            config = function()
+                require("todo-comments").setup()
+            end,
+        })
+
 	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
 	--use("rking/ag.vim")
 	--use("Yggdroot/indentLine")
