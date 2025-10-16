@@ -186,8 +186,15 @@ function Cfg.cmp()
             "--query-driver=/opt/clangd_*/lib/clang/*/include"
         }
     })
+    vim.lsp.config("cmake", {
+        cmd = {
+            "cmake-language-server"
+        }
+    })
+
     vim.lsp.enable('pyright')
     vim.lsp.enable('clangd')
+    vim.lsp.enable('cmake')
 
 end
 return Cfg
