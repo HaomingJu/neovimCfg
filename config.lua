@@ -139,24 +139,4 @@ function Cfg.wiki()
         vim.g.vimwiki_global_ext = 0
 end
 
-function Cfg.lualine()
-    require('lualine').setup{
-        options = {
-            icons_enabled = false,
-            theme = 'molokai',
-            component_separators = { left = '|', right = '|'},
-            section_separators = { left = '', right = ''},
-        },
-        sections = {
-            lualine_a = {'mode'},
-            lualine_b = {'branch'},
-            lualine_c = {{'filename', file_status = true, path = 3}},
-            lualine_x = {'encoding', 'fileformat', 'filetype'},
-            lualine_y = {'progress'},
-            lualine_z = {}
-        },
-    }
-end
-
-
 return Cfg

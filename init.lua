@@ -18,7 +18,8 @@ packer.init({
 
 packer.startup(function()
 	use("wbthomason/packer.nvim")
-        use("folke/tokyonight.nvim","ellisonleao/gruvbox.nvim")
+        use("folke/tokyonight.nvim")
+        use("ellisonleao/gruvbox.nvim")
 	use({
 		"preservim/nerdtree",
 		config = function()
@@ -102,10 +103,10 @@ packer.startup(function()
         use("mg979/vim-visual-multi")
 
         use({
-                "nvim-lualine/lualine.nvim",
-                config = function()
-                    require("config").lualine()
-                end,
+            "lukas-reineke/indent-blankline.nvim",
+            config = function()
+                require("ibl").setup()
+            end,
         })
 
 	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
