@@ -116,6 +116,7 @@ packer.startup(function()
                 require("todo-comments").setup()
             end,
         })
+        use ("farmergreg/vim-lastplace")
 
 	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
 	--use("rking/ag.vim")
