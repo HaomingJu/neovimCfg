@@ -139,4 +139,10 @@ function Cfg.wiki()
         vim.g.vimwiki_global_ext = 0
 end
 
+function Cfg.indent_blankline()
+    require("ibl").setup {
+        scope = { enabled = true }
+    }
+end
+
 return Cfg

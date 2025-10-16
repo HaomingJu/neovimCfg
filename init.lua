@@ -105,7 +105,7 @@ packer.startup(function()
         use({
             "lukas-reineke/indent-blankline.nvim",
             config = function()
-                require("ibl").setup()
+                require("config").indent_blankline()
             end,
         })
 
