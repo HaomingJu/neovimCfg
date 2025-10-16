@@ -145,4 +145,49 @@ function Cfg.indent_blankline()
     }
 end
 
+function Cfg.cmp()
+    -- 加载friendly-snippets代码片段
+    require("luasnip.loaders.from_vscode").lazy_load()
+
+    local cmp = require('cmp')
+    cmp.setup({
+        snippet = {
+            expand = function(args)
+                require('luasnip').lsp_expand(args.body)
+            end,
+        },
+        mapping = cmp.mapping.preset.insert({
+            ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+            ['<C-f>'] = cmp.mapping.scroll_docs(4),
+            ['<C-Space>'] = cmp.mapping.complete(),
+            ['<C-e>'] = cmp.mapping.abort(),
+            ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+            { name = 'nvim_lsp' },
+            { name = 'luasnip' },
+            { name = 'buffer' },
+            { name = 'path' },
+        }),
+    })
+    
+    -- 启动LSP
+    vim.lsp.config("clangd", {
+        cmd = {
+            "clangd",
+            "--background-index",               -- 后台建立索引
+            "--compile-commands-dir=build",     -- 指定编译命令目录（可选）
+            "--header-insertion=never",         -- 关闭自动插入头文件
+            "--all-scopes-completion",          -- 所有作用域的补全
+            "--completion-style=detailed",      -- 详细的补全样式
+            "--pch-storage=memory",
+            "--clang-tidy",
+            "--enable-config",
+            "--query-driver=/opt/clangd_*/lib/clang/*/include"
+        }
+    })
+    vim.lsp.enable('pyright')
+    vim.lsp.enable('clangd')
+
+end
 return Cfg
