@@ -55,14 +55,6 @@ packer.startup(function()
 	})
 
 	use({
-		"neoclide/coc.nvim",
-		config = function()
-			require("coc-config")
-		end,
-		tag = "v0.0.82",
-	})
-
-	use({
 		"vimwiki/vimwiki",
 		config = function()
                         require("config").wiki()
@@ -118,7 +110,21 @@ packer.startup(function()
         })
         use ("farmergreg/vim-lastplace")
 
-	--use({ "vladdoster/remember.nvim", config = [[ require('remember') ]] })
-	--use("rking/ag.vim")
-	--use("Yggdroot/indentLine")
+        -- 补全引擎以及源
+        use ({
+            "hrsh7th/nvim-cmp",
+            requires = {
+                "neovim/nvim-lspconfig",
+                "hrsh7th/cmp-nvim-lsp", 
+                "hrsh7th/cmp-buffer",
+                "hrsh7th/cmp-path",
+                "hrsh7th/cmp-cmdline",
+                "L3MON4D3/LuaSnip",
+                "saadparwaiz1/cmp_luasnip",
+                "rafamadriz/friendly-snippets",
+            },
+            config = function()
+                require("config").cmp()
+            end,
+        })
 end)
