@@ -191,10 +191,37 @@ function Cfg.cmp()
             "cmake-language-server"
         }
     })
+    vim.lsp.config("yaml", {
+        cmd = {
+            "yaml-language-server",
+            "--stdio"
+        },
+        -- 加载schema文件
+        settings = {
+            yaml = {
+                -- 1. 使用schemastore中的schema
+                schemaStore = {
+                    enable = true,
+                    url = "https://www.schemastore.org/api/json/catalog.json"
+                },
+                -- 2. 自定义schema
+                schemas = {
+                    ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "docker-compose*.yml",
+                    ["https://raw.githubusercontent.com/awslabs/goformation/v5.5.0/schema/cloudformation.schema.json"] = "template*.yml",
+                    ["pipeline-schema.json"] = "*pipeline*.yml"
+                }
+            },
+            completion = true,
+            hover = true,
+            validate = true,
+            fileMatch = { "*.yml", "*.yaml" }
+        }
+    })
 
     vim.lsp.enable('pyright')
     vim.lsp.enable('clangd')
     vim.lsp.enable('cmake')
+    vim.lsp.enable('yaml')
 
 end
 return Cfg
