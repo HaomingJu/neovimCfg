@@ -112,6 +112,12 @@ packer.startup(function()
 
         -- 补全引擎以及源
         use ({
+            "williamboman/mason.nvim",
+            config = function()
+                require("mason").setup()
+            end
+        })
+        use ({
             "hrsh7th/nvim-cmp",
             requires = {
                 "neovim/nvim-lspconfig",
