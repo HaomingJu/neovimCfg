@@ -41,7 +41,7 @@ end
 
 function Cfg.colortheme()
 	vim.o.background = "dark"
-	--vim.cmd([[colorscheme gruvbox]])
+        --vim.cmd([[colorscheme gruvbox]])
         vim.cmd([[colorscheme tokyonight-moon]])
 
 end
@@ -222,6 +222,15 @@ function Cfg.cmp()
     vim.lsp.enable('clangd')
     vim.lsp.enable('cmake')
     vim.lsp.enable('yaml')
+
+    vim.diagnostic.config({
+        virtual_text = true,
+        signs = true,
+        update_in_insert = false,
+        underline = true,
+        severity_sort = false,
+        float = true,
+    })
 
 end
 return Cfg

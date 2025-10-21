@@ -35,4 +35,8 @@ function Keys.tagbar()
 	map("n", "tt", "<CMD>TagbarToggle<CR>")
 end
 
+function Keys.lspcfg()
+        map("n", "gd", "<CMD>lua vim.lsp.buf.definition()<CR>")
+end
+
 return Keys

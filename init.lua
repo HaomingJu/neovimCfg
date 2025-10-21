@@ -131,6 +131,7 @@ packer.startup(function()
             },
             config = function()
                 require("config").cmp()
+                require("keymap").lspcfg()
             end,
         })
 end)
