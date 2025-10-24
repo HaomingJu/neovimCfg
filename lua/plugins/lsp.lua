@@ -1,19 +1,54 @@
 return {
     {
-        "mason-org/mason-lspconfig.nvim",
+        "williamboman/mason.nvim",
         dependencies = {
-            "williamboman/mason.nvim",
             "neovim/nvim-lspconfig"
         },
         config = function()
             require("mason").setup()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "pyright", "clangd" },
-                automatic_enable = true,
-            })
-            -- TODO: 为LSP服务器添加自定义配置
             
+            -- 直接配置clangd using new vim.lsp.config API
+            local capabilities = require('cmp_nvim_lsp').default_capabilities()
+            
+            vim.lsp.config.clangd = {
+                cmd = {
+                    "clangd",
+                    "--clang-tidy",
+                    "--header-insertion=iwyu",
+                    "--function-arg-placeholders",
+                    "--fallback-style=llvm",
+                    "--background-index=false", 
+                    "--limit-references=0",    
+                    "--all-scopes-completion=false",  
+                    "--completion-style=detailed",  
+                    "--limit-results=16",
+                },
+                capabilities = capabilities,
+                init_options = {
+                    usePlaceholders = true,
+                    completeUnimported = true,
+                    clangdFileStatus = true,
+                },
+                filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
+            }
+            
+            -- 
+            vim.lsp.config.pyright = {
+                settings = {
+                    python = {
+                        analysis = {
+                            typeCheckingMode = "basic",
+                            autoSearchPaths = true,
+                            useLibraryCodeForTypes = true,
+                            diagnosticMode = "workspace",
+                        }
+                    }
+                }
+            }
 
+            -- Enable clangd
+            vim.lsp.enable('clangd')
+            vim.lsp.enable('pyright')
         end
     },
 
@@ -52,24 +87,14 @@ return {
                 formatting = {
                     format = function(entry, vim_item)
                         -- 为不同源设置图标
-                        -- vim_item.kind = string.format('%s %s', ({
-                        --     nvim_lsp = "[LSP]",
-                        --     luasnip = "[Snippet]",
-                        --     buffer = "[Buffer]",
-                        --     path = "[Path]",
-                        --     codeium = "[AI]",
-                        -- })[entry.source.name] or "", vim_item.kind)
-                        
-                        -- 显示来源
-                        -- INFO: https://www.nerdfonts.com/cheat-sheet
-                        vim_item.menu = ({
+                        vim_item.kind = string.format('%s %s', ({
                             nvim_lsp = "[LSP]",
                             luasnip = "[Snippet]",
                             buffer = "[Buffer]",
                             path = "[Path]",
-                            codeium = "[Codeium]",
+                            codeium = "Codeium",
                             copilot = "[Copilot]",
-                        })[entry.source.name]
+                        })[entry.source.name] or "", vim_item.kind)
                         
                         return vim_item
                     end
