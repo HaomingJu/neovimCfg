@@ -10,9 +10,6 @@ function Keys.nerdtree()
 	map("n", "ff", "<CMD>NERDTreeToggle<CR>")
 end
 
-function Keys.neoformat()
-	map("n", "<F7>", "<CMD>Neoformat<CR>")
-end
 
 function Keys.leaderf()
 	map("n", "<C-p>", "<CMD>Leaderf file<CR>")
