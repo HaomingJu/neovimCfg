@@ -5,6 +5,7 @@ local ConfigInfo = {
         dependencies = { "MunifTanjim/nui.nvim" },
         config = function()
             -- TODO: 设置快捷键, 当在normal状态下时, 按下Enter键盘可以打开cmdline
+
             require("noice").setup({
                 lsp = {
                     override = {
@@ -31,6 +32,10 @@ local ConfigInfo = {
                     },
                 },
             })
+            -- TODO: 设置快捷键, 当在normal状态下时, 按下Enter键盘可以打开cmdline
+            -- vim.keymap.set("n", "<CR>", function()
+            --     vim.cmd(":Noice")
+            -- end, { desc = "Open cmdline with Enter" })
         end
     }
 

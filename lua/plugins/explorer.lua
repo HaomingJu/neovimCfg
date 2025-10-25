@@ -10,7 +10,15 @@ return {
         lazy = false, -- neo-tree will lazily load itself
         config = function()
             -- TODO: 配置Toggle快捷键
-            vim.keymap.set("n", "ff", "<Cmd>Neotree<CR>")
+            vim.keymap.set("n", "ff", "<Cmd>Neotree toggle<CR>")
+            
+            require("neo-tree").setup({
+                window = {
+                    mappings = {
+                        ["f"] = "none", -- 取消f键的搜索功能
+                    },
+                },
+            })
         end,
     },
 }

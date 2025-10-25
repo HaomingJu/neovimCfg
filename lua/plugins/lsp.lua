@@ -92,8 +92,8 @@ return {
                             luasnip = "[Snippet]",
                             buffer = "[Buffer]",
                             path = "[Path]",
-                            codeium = "Codeium",
-                            copilot = "[Copilot]",
+                            codeium = "[]",
+                            copilot = "[]",
                         })[entry.source.name] or "", vim_item.kind)
                         
                         return vim_item
@@ -104,7 +104,7 @@ return {
                     { name = 'codeium' },
                     { name = 'nvim_lsp' },
                     { name = 'luasnip' },
-                    { name = 'buffer' },
+                    -- { name = 'buffer' },
                     { name = 'path' },
                 }),
             })

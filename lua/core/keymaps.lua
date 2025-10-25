@@ -27,3 +27,4 @@ map("n", "<Esc><Esc>", ":quitall<CR>",  { desc = "快速退出窗口" })
 map("n", "m", "gd",                     { desc = "高亮" })
 map("n", "fq", ":stop<CR>",             { desc = "临时切出窗口" })
 map("n", "<C-s>", ":wa<CR>",            { desc = "保存" })
+
