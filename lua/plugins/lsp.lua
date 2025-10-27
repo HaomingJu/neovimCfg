@@ -155,29 +155,5 @@ return {
             })
         end
     },
-    {
-        'numToStr/Comment.nvim',
-        dependencies = {
-            'JoosepAlviste/nvim-ts-context-commentstring'
-        },
-        config = function()
-            require('nvim-treesitter.configs').setup({
-            context_commentstring = { 
-                enable = true, 
-                enable_autocmd = false 
-            },
-            })
-            require('Comment').setup({
-            toggler = { 
-                line = 'ci',  -- 单行注释切换
-                block = 'ci'  -- 块注释切换
-            }, 
-            opleader = { 
-                line = 'ci',   -- 可视模式行注释
-                block = 'ci'   -- 可视模式块注释
-            }, 
-            pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook()
-            })
-        end
-    }
+
 }
