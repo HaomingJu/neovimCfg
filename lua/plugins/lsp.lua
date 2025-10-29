@@ -1,17 +1,13 @@
 return {
     {
-        "williamboman/mason.nvim",
+        "mason-org/mason.nvim",
         dependencies = {
-            "neovim/nvim-lspconfig"
+            "neovim/nvim-lspconfig",
+            "mason-org/mason-lspconfig.nvim"
         },
         config = function()
-            require("mason").setup()
-            
-            -- 直接配置clangd using new vim.lsp.config API
-            local capabilities = require('cmp_nvim_lsp').default_capabilities()
-            
-            vim.lsp.config.clangd = {
-                cmd = {
+            vim.lsp.config('clangd', {
+                cmd = { 
                     "clangd",
                     "--clang-tidy",
                     "--header-insertion=iwyu",
@@ -23,32 +19,13 @@ return {
                     "--completion-style=detailed",  
                     "--limit-results=16",
                 },
-                capabilities = capabilities,
-                init_options = {
-                    usePlaceholders = true,
-                    completeUnimported = true,
-                    clangdFileStatus = true,
-                },
-                filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-            }
-            
-            -- 
-            vim.lsp.config.pyright = {
-                settings = {
-                    python = {
-                        analysis = {
-                            typeCheckingMode = "basic",
-                            autoSearchPaths = true,
-                            useLibraryCodeForTypes = true,
-                            diagnosticMode = "workspace",
-                        }
-                    }
-                }
-            }
+            })
 
-            -- Enable clangd
-            vim.lsp.enable('clangd')
-            vim.lsp.enable('pyright')
+            require("mason").setup()
+            require("mason-lspconfig").setup({
+                ensure_installed = { "lua_ls", "pyright", "clangd" },
+                automatic_enable = true,
+            })
         end
     },
 
