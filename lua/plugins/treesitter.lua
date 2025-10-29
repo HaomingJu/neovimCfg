@@ -6,7 +6,7 @@ return {
         event = { "BufReadPost", "BufNewFile" },
         config = function()
             require("nvim-treesitter.configs").setup({
-                -- ensure_installed = { "c", "cpp", "cmake", "lua", "vim", "vimdoc", "bash", "comment", "dockerfile", "json", "yaml" },
+                ensure_installed = { "c", "cpp", "cmake", "lua", "vim", "vimdoc", "bash", "comment", "dockerfile", "json", "yaml" },
                 -- sync_install = true,
                 -- auto_install = true,
                 highlight = {
@@ -15,5 +15,6 @@ return {
                 },
             })
         end,
+        build = ":TSUpdate",
     }
 }
