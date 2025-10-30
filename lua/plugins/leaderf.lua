@@ -10,7 +10,7 @@ return {
         },
 
         config = function()
-            vim.g.Lf_PopupBorders = { "", "", "", "", "", "", "", "" }
+            vim.g.Lf_PopupShowBorder = 0
             vim.g.Lf_WindowPosition = "popup"
             vim.g.Lf_PopupColorscheme = "default"
             vim.g.Lf_ShowDevIcons = 0
