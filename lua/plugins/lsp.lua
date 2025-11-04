@@ -36,6 +36,7 @@ return {
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
+            "hrsh7th/cmp-emoji",
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
             "rafamadriz/friendly-snippets",
@@ -105,8 +106,7 @@ return {
                             luasnip = "[Snippet]",
                             buffer = "[Buffer]",
                             path = "[Path]",
-                            codeium = "[]",
-                            copilot = "[]",
+                            copilot = "[Copilot]",
                         })[entry.source.name] or "", vim_item.kind)
                         
                         return vim_item
@@ -114,11 +114,11 @@ return {
                 },
                 sources = cmp.config.sources({
                     { name = 'copilot' },
-                    { name = 'codeium' },
                     { name = 'nvim_lsp' },
                     { name = 'luasnip' },
-                    -- { name = 'buffer' },
+                    { name = 'buffer' },
                     { name = 'path' },
+                    { name = 'emoji' }
                 }),
             })
 
