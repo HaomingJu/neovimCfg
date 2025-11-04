@@ -16,6 +16,7 @@ return {
                 window = {
                     mappings = {
                         ["f"] = "none", -- 取消f键的搜索功能
+                        ["o"] = "open", -- 设置按键o为打开/关闭目录
                     },
                 },
             })
