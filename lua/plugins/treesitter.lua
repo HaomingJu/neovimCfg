@@ -2,7 +2,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         branch = 'master',
-        lazy = false,
+        lazy = true,
         event = { "BufReadPost", "BufNewFile" },
         config = function()
             require("nvim-treesitter.configs").setup({

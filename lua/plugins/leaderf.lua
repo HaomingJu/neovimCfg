@@ -1,6 +1,7 @@
 return {
     {
         "Yggdroot/LeaderF",
+        lazy = false,
         keys = {
             { "<C-p>", "<CMD>Leaderf file --no-auto-preview<CR>", mode = "n", desc = "LeaderF 文件搜索" },
             { "<C-i>", "<CMD>Leaderf mru --no-auto-preview --fullPath<CR>", mode = "n", desc = "LeaderF MRU搜索" },
